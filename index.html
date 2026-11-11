@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Location Finder</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Smart Location Finder</h1>
+
+    <p>Explore locations around you!</p>
+
+    <!-- Location Search -->
+    <input
+        type="text"
+        id="locationInput"
+        placeholder="Enter a location..."
+    >
+
+    <button id="searchBtn">Search Location</button>
+    <p id="searchStatus"></p>
+
+
+    <!-- Route Finder -->
+    <h3>Find Route Between Two Places</h3>
+
+    <input
+        type="text"
+        id="startLocation"
+        placeholder="Enter starting location..."
+    >
+
+    <input
+        type="text"
+        id="endLocation"
+        placeholder="Enter destination..."
+    >
+
+    <button id="routeBtn">Find Route</button>
+
+    <p id="routeStatus"></p>
+
+
+    <!-- Nearby Places -->
+    <h3>Find Nearby Places</h3>
+
+    <button class="placeBtn" data-type="restaurant">
+        Restaurants
+    </button>
+
+    <button class="placeBtn" data-type="hospital">
+        Hospitals
+    </button>
+
+    <button class="placeBtn" data-type="hotel">
+        Hotels
+    </button>
+
+    <button class="placeBtn" data-type="atm">
+        ATMs
+    </button>
+
+    <!-- Nearby Places Results -->
+    <div id="results"></div>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

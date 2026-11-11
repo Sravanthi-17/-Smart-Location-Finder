@@ -1,0 +1,98 @@
+
+/* General webpage styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #243b55;
+}
+
+/* Section headings */
+h3 {
+    color: #243b55;
+    margin-top: 25px;
+}
+
+/* Input fields */
+input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+/* All buttons */
+button {
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Disabled button */
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Route status message */
+#routeStatus {
+    color: #243b55;
+    font-weight: bold;
+    margin: 12px;
+}
+
+/* Location search status */
+#searchStatus {
+    color: #243b55;
+    margin: 10px;
+}
+
+/* Map styling */
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Nearby places results */
+#results {
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* Nearby place buttons */
+.placeBtn {
+    margin: 5px;
+}
+
+/* Individual result item */
+.result-item {
+    background: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Result hover effect */
+.result-item:hover {
+    background: #e5efff;
+}
